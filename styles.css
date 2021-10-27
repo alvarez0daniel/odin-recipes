@@ -13,9 +13,10 @@ body {
   min-height: 100vh;
   background-color: rgba(134, 206, 184, 0.562);
 
-  overflow: hidden;
+  overflow-x: hidden;
   
   font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
 }
 
 img {
@@ -28,62 +29,141 @@ img {
 
 .container--page {
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .container--hero {
   width: 100%;
   min-height: 500px;
+}
 
+.container--recipie {
+  padding: 1.5rem 2rem;
+}
+
+.container--recipie,
+.container--prep,
+.container--ingredients,
+.container--directions {
+  margin-bottom: 1rem;
+}
+
+
+.wrapper--hero {
+  width: 100%;
+  min-height: 500px;
   position: relative;
+}
 
-  background-image: url(images/feast.jpg);
+.hero {
   background-position: center;
   background-size: cover;
-  margin: 0 auto;
+}
+
+.hero--main {
+  background-image: url(images/feast.jpg);
+}
+
+.hero--roast {
+  background-image: url(images/stag-roast.jpg);
+}
+
+.hero--stew {
+  background-image: url(images/fey-stew.jpg);
+}
+
+.hero--pie {
+  background-image: url(images/magni-pie.webp);
+}
+
+.hero::after {
+  content: '';
+
+  width: 100%;
+  height: 500px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #33333369;
+
+}
+
+.header--page {
+  padding: 1rem;
+  background-color: #333333;
+  color: whitesmoke;
 }
 
 .heading {
   display: block;
+  margin: 1rem 0;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 5px;
 }
 
 .heading--page {
   font-size: clamp(2rem, 5vw, 5rem);
 }
 
-.heading--hero {
+.heading--recipie {
+  font-size: clamp(1.5rem, 4vw, 4rem);
+}
+
+.heading--prep {
+  text-align: left;
+}
+
+.heading--hero,
+.quote--hero {
+  width: 100%;
   position: absolute;
-  top: 20vh;
-  left: 20vw;
+  top: 40%;
 
   color: aliceblue;
   font-family: cursive;
   font-size: clamp(2.2rem, 4vw, 4rem);
+  text-align: center;
+
+  z-index: 10;
 }
 
-.container--hero::before {
-  content: '';
-
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.459);
-
-  position: absolute;
-  top: 0;
-  left: 0;
+.container--list {
+  padding: 1rem;
 }
 
-ul li a {
-  padding: 2rem;
-  font-size: clamp(1rem, 2vw, 2rem);
+.link--home {
+  margin-left: calc(50% - 1rem);
+  padding: 1rem;
+  border: 1px solid #333333;
+
+  font-size: clamp(1rem, 3vw, 2rem);
   text-decoration: none;
 }
 
-.image {
-  display: block;
-  
+ul {
   width: 100%;
 }
 
+ul li {
+  width: 100%;
+  list-style: none;
 
+}
+
+ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 5%;
+  margin: 1rem 0;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  background-color: #333333;;
+
+  color: whitesmoke;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-decoration: none;
+}
