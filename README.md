@@ -44,3 +44,5 @@ Took a little Googling but it was simple enough. In my research, I came across t
 This was pretty straight forward. I'm using Visual Studio Code and there are a lot of shortcuts and auto-completes which saved me a ton of typing. Where I feel like I spent a lot of time typing was the terminal. I am making it a point that if I want to access my repos, I have to get there from the terminal. Also, I spent a lot of time staging and committing in GIT. I spent a little time looking at other people's commit messages on [theodinproject repo](https://github.com/TheOdinProject/theodinproject) and it seems like it runs gamut. Some are far more verbose than others.
 
 I also took an interest in markdown. I know that README.md files are documentation, but mine are going to be a journal for these projects. I wouldn't suggest anyone copying this repo. :joy:
+
+It's pretty cool that you can deploy a simple webpage on Github. Deployed mine [here](https://alvarez0daniel.github.io/odin-recipes/).
